@@ -38,6 +38,7 @@ jobs:
         cmake -S . -B build -G Ninja \
           -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} \
           -DENABLE_TESTS=ON \
+          -DENABLE_UPDATER=OFF \
           -DENABLE_SCRIPTING=$enable_scripting \
           -DENABLE_CCACHE=$enable_ccache \
           -DLAF_BACKEND=$laf_backend \
